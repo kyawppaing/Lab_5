@@ -62,3 +62,26 @@ Fraction Fraction:: operator --(){
     num = num - denom;
     return Fraction(num, denom);
 }
+
+bool operator ==(Fraction f1, Fraction f2){
+    return (f1.num * f2.denom) == (f2.num * f1.denom);
+}
+
+bool operator !=(Fraction f1, Fraction f2){
+    return (f1.num * f2.denom) != (f2.num * f1.denom);
+}
+
+bool operator <(Fraction f1, Fraction f2){
+    return (f1.num * f2.denom) < (f2.num * f1.denom);
+}
+
+bool operator >(Fraction f1, Fraction f2){
+    return (f1.num * f2.denom) > (f2.num * f1.denom);
+}
+
+bool operator <=(Fraction f1, Fraction f2){
+    return (f1.num * f2.denom) <= (f2.num * f1.denom);
+}
+bool operator >=(Fraction f1, Fraction f2){
+    return (f1.num * f2.denom) >= (f2.num * f1.denom);
+}

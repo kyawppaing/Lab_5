@@ -17,6 +17,12 @@ int main(){
     ++a;
     a.output();
 
+    if(a==b){
+        cout << "Fractions are equal" << endl;
+    } else {
+        cout << "Fractions are not equal" << endl;  
+    }
+
     return 0;
 }
 

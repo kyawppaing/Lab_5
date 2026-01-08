@@ -25,7 +25,12 @@ class Fraction {
         Fraction operator ++();
         Fraction operator --();
 
-        
+        friend bool operator ==(Fraction f1, Fraction f2);
+        friend bool operator !=(Fraction f1, Fraction f2);
+        friend bool operator <(Fraction f1, Fraction f2);
+        friend bool operator >(Fraction f1, Fraction f2);
+        friend bool operator <=(Fraction f1, Fraction f2);
+        friend bool operator >=(Fraction f1, Fraction f2);
 
     private:
         int num;
