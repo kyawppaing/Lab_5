@@ -16,3 +16,19 @@ Fraction:: Fraction(int n, int d){
     num = n;
     denom = d;
 }
+
+void Fraction:: setnumerator(int n){
+    num = n;
+}
+
+void Fraction:: setdenominator(int d){
+    denom = d;
+}
+
+int Fraction:: getnumerator() const{
+    return num;
+}
+
+int Fraction:: getdenominator() const{
+    return denom;
+}

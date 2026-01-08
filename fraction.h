@@ -8,6 +8,14 @@ class Fraction {
         Fraction(int n);
         Fraction(int n, int d);
 
+        void setnumerator(int n);    //Mutators
+        void setdenominator(int d);
+
+        int getnumerator() const;       //Accessors
+        int getdenominator() const;
+
+        
+
 
     private:
         int num;
