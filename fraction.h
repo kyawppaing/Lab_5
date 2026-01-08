@@ -1,5 +1,5 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef FRACTION_H
+#define FRACTION_H
 
 class Fraction {
 
@@ -22,6 +22,10 @@ class Fraction {
         friend Fraction operator *(Fraction f1, Fraction f2);
         friend Fraction operator /(Fraction f1, Fraction f2);
 
+        Fraction operator ++();
+        Fraction operator --();
+
+        
 
     private:
         int num;
@@ -29,4 +33,4 @@ class Fraction {
 };
 
 
-#endif // RECTANGLE_H
+#endif 

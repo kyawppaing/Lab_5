@@ -52,3 +52,13 @@ Fraction operator *(Fraction f1, Fraction f2){
 Fraction operator /(Fraction f1, Fraction f2){
     return Fraction( (f1.num * f2.denom), (f1.denom * f2.num) );
 }
+
+Fraction Fraction:: operator ++(){
+    num = num + denom;
+    return Fraction(num, denom);
+}
+
+Fraction Fraction:: operator --(){
+    num = num - denom;
+    return Fraction(num, denom);
+}

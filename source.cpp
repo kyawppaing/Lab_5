@@ -14,6 +14,8 @@ int main(){
     (a*b).output();
     (a/b).output(); 
 
+    ++a;
+    a.output();
 
     return 0;
 }
