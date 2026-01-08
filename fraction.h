@@ -14,7 +14,7 @@ class Fraction {
         int getnumerator() const;       //Accessors
         int getdenominator() const;
 
-        
+        void output();
 
 
     private:
