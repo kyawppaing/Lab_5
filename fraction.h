@@ -16,6 +16,12 @@ class Fraction {
 
         void output();
 
+        //Basic Operators
+        friend Fraction operator +(Fraction f1, Fraction f2);
+        friend Fraction operator -(Fraction f1, Fraction f2);
+        friend Fraction operator *(Fraction f1, Fraction f2);
+        friend Fraction operator /(Fraction f1, Fraction f2);
+
 
     private:
         int num;

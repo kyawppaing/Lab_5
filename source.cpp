@@ -9,6 +9,11 @@ int main(){
 
     a.output();
 
+    (a+b).output();
+    (a-b).output();
+    (a*b).output();
+    (a/b).output(); 
+
 
     return 0;
 }
